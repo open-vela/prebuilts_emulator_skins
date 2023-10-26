@@ -1,0 +1,35 @@
+parts {
+  device {
+    display {
+      width 336
+      height 480
+      x 0
+      y 0
+    }
+  }
+  portrait {
+    background {
+      image Xiaomi_Smart_Band_8_Pro_back.png
+    }
+    foreground {
+      mask Xiaomi_Smart_Band_8_Pro_mask.png
+    }
+  }
+}
+layouts {
+  portrait {
+    width 426
+    height 940
+    event EV_SW:0:1
+    part1 {
+      name portrait
+      x 0
+      y 0
+    }
+    part2 {
+      name device
+      x 45
+      y 231
+    }
+  }
+}
